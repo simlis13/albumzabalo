@@ -1,0 +1,205 @@
+body{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #bbbbbb;
+    margin: 0;
+}
+#oldal{
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#bal{
+    float: left;
+    background-color: #dfdede;
+    width: 160px;
+    height: 2000px;
+    padding: 10px;
+}
+#jobb{
+    float: right;
+    padding: 20px;
+    width: calc(100% - 160px)
+}
+#cim h1{
+    font-family: 'Times New Roman', serif;
+    font-size: 1.7em;
+    text-align: center;
+}
+#cim .cimkep{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url('knight_b_rev.gif') no-repeat;
+}
+#cim h2{
+    font-family: 'Courier New', monospace;
+    font-size: 1.8em;
+    text-align: center;
+}
+#menu{
+    margin: 30px 0;
+}
+#menu p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    letter-spacing: 0.2em;
+}
+#menu li{
+    list-style-type: none;
+    margin: 5px;
+}
+#menu .aktualis{
+    list-style-type: square;
+}
+#menu a,
+#menu a:link,
+#menu a:visited{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+#menu a:hover{
+    color: #66f;
+}
+.kep{
+    float: left;
+    border: 2px solid #ff9;
+    margin: 8px;
+}
+
+.kep2{
+    float: middle;
+    border: 2px solid #ff9;
+    margin: 8px;
+}
+
+.kep3{
+    float: right;
+    border: 2px solid #ff9;
+    margin: 8px;
+}
+
+#jobb h1{
+    text-align: center;
+    font-size: 1.7em;
+
+}
+#jobb h2{
+    font-size: 1.4em;
+}
+dt{
+    font-size: 1.2em;
+    margin: 10px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+table{
+    margin: 10px auto;
+    font-family: 'Courier New', monospace;
+}
+th,td{
+    padding: 3px;
+    border-width: 1px;
+    border-color: black;
+    border-style: none;
+}
+fieldset,
+fieldset p{
+    font-weight: bold;
+}
+input[type="text"]{
+    width: 300px;
+}
+input[name="szido_ev"],
+input[name="szido_nap"]{
+    width: 30px;
+}
+
+input[type="submit"]{
+    background-color: #cc6;
+}
+
+#center{
+    text-align: center;
+    font-weight: bold;
+}
+
+#munkassag{
+    font-size: 1.2em;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+  }
+
+  .gallery-item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.2);
+  }
+
+  .fesztival {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+  }
+
+  .fesztival-item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    overflow: show;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .fesztival-item:hover {
+    transform: scale(1.05);
+    z-index: 2;
+  }
+
+  .fesztival-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+  }
+
+  .fesztival-kepek:hover img {
+    transform: scale(2.5);
+  }
