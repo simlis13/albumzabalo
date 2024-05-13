@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="styles.css">
 <title>Album Zabáló</title>
+<link rel="icon" href="vecteezy_illustration-vectorielle-de-disque-vinyle-isolee-sur-fond-blanc_9314864.png" type="image/png">
 </head>
 <body>
     <div id="oldal">
@@ -19,6 +20,7 @@
                     <li class="aktualis"><a href="index.html">Nyitó oldal</a></li>
                     <li><a href="elerhetosegek.html">Elérhetőség</a></li>
                     <li><a href="esemenyek.html">Események</a></li>
+                    <li><a href="bakelitek.html">Bakelitek</a></li>
                 </ul>
             </div>
         </div>
@@ -32,11 +34,11 @@
                           <img src="Azi.png" alt="Skatulya I.">
                         </div></td>
                     <td><div class="gallery">
-                        <div class="gallery-item" onclick="window.location.href='home.html'">
+                        <div class="gallery-item" onclick="window.location.href='index.html'">
                           <img src="Manu.jpg" alt="Torz">
                         </div></td>
                     <td><div class="gallery">
-                        <div class="gallery-item" onclick="window.location.href='home.html'">
+                        <div class="gallery-item" onclick="window.location.href='index.html'">
                           <img src="Kisé.png" alt="BandoBabySeason">
                         </div></td>
                     <div class="overlay">
@@ -44,21 +46,21 @@
                       </div>
                 </tr>  
                 <tr id="center">
-                    <td>Azahriah - Skatulya I.</td>
-                    <td>Manuel - Torz</td>
-                    <td>Kisé - BandoBabySeason</td>
+                    <td>Azahriah - Skatulya I.<button onclick="toggleMusic('Azi.mp3')" style="margin-left: 10px;">Belehallgatok</button></td>
+                    <td>Manuel - Torz<button onclick="toggleMusic('Manu.mp3')" style="margin-left: 10px;">Belehallgatok</button></td>
+                    <td>Kisé - BandoBabySeason<button onclick="toggleMusic('Kisé')" style="margin-left: 10px;">Belehallgatok</button></td>
                 </tr>            
                 <tr>
                     <td><div class="gallery">
-                        <div class="gallery-item" onclick="window.location.href='home.html'">
+                        <div class="gallery-item" onclick="window.location.href='index.html'">
                           <img src="Hofi.png" alt="0 Mixtape">
                         </div></td>
                     <td><div class="gallery">
-                        <div class="gallery-item" onclick="window.location.href='home.html'">
+                        <div class="gallery-item" onclick="window.location.href='index.html'">
                           <img src="Pogi.jpg" alt="Vagy Mindent Vagy Semmit">
                         </div></td>
                     <td><div class="gallery">
-                        <div class="gallery-item" onclick="window.location.href='home.html'">
+                        <div class="gallery-item" onclick="window.location.href='index.html'">
                           <img src="Dany.jpg" alt="Ezer Nap">
                         </div></td>
                 </tr>         
@@ -75,15 +77,15 @@
 
                 <tr>
                     <td><div class="gallery">
-                        <div class="gallery-item" onclick="window.location.href='home.html'">
+                        <div class="gallery-item" onclick="window.location.href='index.html'">
                           <img src="Metro2.jpg" alt="WE STILL DONT TRUST YOU">
                         </div></td>
                     <td><div class="gallery">
-                        <div class="gallery-item" onclick="window.location.href='home.html'">
+                        <div class="gallery-item" onclick="window.location.href='index.html'">
                           <img src="Metro1.png" alt="WE DONT TRUST YOU">
                         </div></td> 
                     <td><div class="gallery">
-                        <div class="gallery-item" onclick="window.location.href='home.html'">
+                        <div class="gallery-item" onclick="window.location.href='index.html'">
                           <img src="yeat.png" alt="2093">
                         </div></td>
                 </tr>
@@ -94,15 +96,15 @@
                 </tr>         
                 <tr>
                     <td><div class="gallery">
-                        <div class="gallery-item" onclick="window.location.href='home.html'">
+                        <div class="gallery-item" onclick="window.location.href='index.html'">
                           <img src="Luciano.png" alt="Seductive">
                         </div></td>
                     <td><div class="gallery">
-                        <div class="gallery-item" onclick="window.location.href='home.html'">
+                        <div class="gallery-item" onclick="window.location.href='index.html'">
                           <img src="21.png" alt="American Dream">
                         </div></td>
                     <td><div class="gallery">
-                        <div class="gallery-item" onclick="window.location.href='home.html'">
+                        <div class="gallery-item" onclick="window.location.href='index.html'">
                           <img src="Kencarson.png" alt="A Great Chaos">
                         </div></td>
                 </tr>       
@@ -112,7 +114,37 @@
                         <td>Ken Carson - A Great Chaos</td>
                 </tr>
             </table>
-            
+
+
+            <script>
+              var audio = new Audio();
+              var isPlaying = false;
+      
+              function toggleMusic(Azi) {
+                  if (!isPlaying) {
+                      audio.src = 'Azi.mp3';
+                      audio.volume = 0.5;
+                      audio.play();
+                      isPlaying = true;
+                  } else {
+                      audio.pause();
+                      audio.currentTime = 0;
+                      isPlaying = false;
+                  }
+              }
+              function toggleMusic(Manu) {
+            if (!isPlaying) {
+                audio.src ='Manu.mp3';
+                audio.volume = 0.5;
+                audio.play();
+                isPlaying = true;
+            } else {
+                audio.pause();
+                audio.currentTime = 0;
+                isPlaying = false;
+            }
+        }
+          </script>
 
 
         </div>
