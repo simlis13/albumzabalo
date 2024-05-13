@@ -119,22 +119,10 @@
             <script>
               var audio = new Audio();
               var isPlaying = false;
-      
-              function toggleMusic(Azi) {
-                  if (!isPlaying) {
-                      audio.src = 'Azi.mp3';
-                      audio.volume = 0.5;
-                      audio.play();
-                      isPlaying = true;
-                  } else {
-                      audio.pause();
-                      audio.currentTime = 0;
-                      isPlaying = false;
-                  }
-              }
-              function toggleMusic(Manu) {
+
+            function toggleMusic(filepath) {
             if (!isPlaying) {
-                audio.src ='Manu.mp3';
+                audio.src ='filepath';
                 audio.volume = 0.5;
                 audio.play();
                 isPlaying = true;
